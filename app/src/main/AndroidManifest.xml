@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bm443Android">
         <activity
-            android:name=".SecondActivity"
+            android:name=".AddActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
