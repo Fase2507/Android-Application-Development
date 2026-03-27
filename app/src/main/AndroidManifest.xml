@@ -12,8 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bm443Android">
         <activity
-            android:name=".AddActivity"
+            android:name=".DivActivity"
             android:exported="false" />
+        <activity
+            android:name=".SubActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

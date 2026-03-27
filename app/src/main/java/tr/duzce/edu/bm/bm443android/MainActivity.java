@@ -1,5 +1,6 @@
 package tr.duzce.edu.bm.bm443android;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnGoToAdd;
+    private Button btnGoToSub;
 
+    private Button btnGoToDiv;
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,5 +30,26 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btnGoToSub = findViewById(R.id.btnGoToSub);
+        btnGoToSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, SubActivity.class);
+                startActivity(intent);
+            }
+        }
+        );
+
+        btnGoToDiv = findViewById(R.id.btnGoToDiv);
+        btnGoToDiv.setOnClickListener(new View.OnClickListener() {
+              @Override
+              public void onClick(View v){
+                  Intent intent = new Intent(MainActivity.this, DivActivity.class);
+                  startActivity(intent);
+              }
+          }
+        );
     }
+
 }

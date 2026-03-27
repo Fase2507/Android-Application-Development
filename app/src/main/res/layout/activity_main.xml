@@ -17,4 +17,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btnGoToSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çıkarma Ekranına Git"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToAdd"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <Button
+        android:id="@+id/btnGoToDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bolme Ekranına Git"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToSub"
+        app:layout_constraintVertical_bias="0.055" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

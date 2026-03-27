@@ -3,6 +3,8 @@
     <string name="sayi_1_hint">Sayı 1</string>
     <string name="sayi_2_hint">Sayı 2</string>
     <string name="topla_button">Topla</string>
+    <string name="cikar_button">Çıkar</string>
     <string name="sonuc_label">Sonuç: %1$d</string>
+    <string name="bol_button">Bol</string>
     <string name="error_invalid_input">Lütfen geçerli sayılar girin.</string>
 </resources>

@@ -9,25 +9,24 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AddActivity extends AppCompatActivity {
+public class SubActivity extends AppCompatActivity {
 
-
-    public  final String TAG = AddActivity.class.getName();
+    public  final String TAG = SubActivity.class.getName();
     private EditText txtSayi1, txtSayi2;
-    private Button btnTopla;
+    private Button btnCikar;
     private TextView lblSonuc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add);
+        setContentView(R.layout.activity_sub);
         initComponents();
         registerEventHandlers();
         Log.i(TAG, "onCreate() metodu calisti.");
     }
 
     private void registerEventHandlers() {
-        btnTopla.setOnClickListener(new View.OnClickListener() {
+        btnCikar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String input1 = txtSayi1.getText().toString();
@@ -41,8 +40,8 @@ public class AddActivity extends AppCompatActivity {
                 try {
                     int sayi1 = Integer.parseInt(input1);
                     int sayi2 = Integer.parseInt(input2);
-                    int toplam = sayi1 + sayi2;
-                    lblSonuc.setText(getString(R.string.sonuc_label, toplam));
+                    int sonuc = sayi1 - sayi2;
+                    lblSonuc.setText(getString(R.string.sonuc_label, sonuc));
                     lblSonuc.setVisibility(View.VISIBLE);
                 } catch (NumberFormatException e) {
                     lblSonuc.setText(R.string.error_invalid_input);
@@ -51,10 +50,10 @@ public class AddActivity extends AppCompatActivity {
         });
     }
 
-    void initComponents() {
+    private void initComponents() {
         txtSayi1 = findViewById(R.id.txtSayi1);
         txtSayi2 = findViewById(R.id.txtSayi2);
-        btnTopla = findViewById(R.id.tpla);
+        btnCikar = findViewById(R.id.cikar);
         lblSonuc = findViewById(R.id.lblSonuc);
     }
 }
