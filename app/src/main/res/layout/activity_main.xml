@@ -7,38 +7,58 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnGoToAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Toplama Ekranına Git"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/toplama_ekran_na_git"
+        app:icon="@drawable/add_ic"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGoToSub"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:backgroundTint="@color/material_dynamic_neutral0"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnGoToSub"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Çıkarma Ekranına Git"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="@string/karma_ekran_na_git"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGoToDiv"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGoToAdd"
-        app:layout_constraintVertical_bias="0.055" />
+        style="@style/submitButton"
+        app:backgroundTint="@color/dark_blue"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnGoToDiv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bolme Ekranına Git"
+        android:layout_marginTop="16dp"
+        android:text="@string/b_lme_ekran_na_git"
+        app:cornerRadius="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGoToSub"
-        app:layout_constraintVertical_bias="0.055" />
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToSub" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnGoToReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kayit_ekrani"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToDiv"
+        app:layout_constraintVertical_bias="0.196" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

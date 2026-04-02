@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     private Button btnGoToDiv;
 
+    private Button btnGoToReg;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +52,15 @@ public class MainActivity extends AppCompatActivity {
               }
           }
         );
+
+        btnGoToReg = findViewById(R.id.btnGoToReg);
+        btnGoToReg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

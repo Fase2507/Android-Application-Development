@@ -7,4 +7,12 @@
     <string name="sonuc_label">Sonuç: %1$d</string>
     <string name="bol_button">Bol</string>
     <string name="error_invalid_input">Lütfen geçerli sayılar girin.</string>
+    <string name="toplama_ekran_na_git">Toplama Ekranına Git</string>
+    <string name="karma_ekran_na_git">Çıkarma Ekranına Git</string>
+    <string name="b_lme_ekran_na_git">Bölme Ekranına Git</string>
+    <string name="kayit_ekrani">Kayit ekranina git</string>
+    <string name="telefon_numaran_z">Telefon Numaranız</string>
+    <string name="kay_t_ol">Kayıt Ol</string>
+    <string name="kay_t_formu">Kayıt Formu</string>
+    <string name="click_count_msg">Tıklanma Sayısı: %1$d</string>
 </resources>

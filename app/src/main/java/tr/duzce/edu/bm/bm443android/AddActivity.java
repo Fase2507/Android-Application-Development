@@ -56,5 +56,7 @@ public class AddActivity extends AppCompatActivity {
         txtSayi2 = findViewById(R.id.txtSayi2);
         btnTopla = findViewById(R.id.tpla);
         lblSonuc = findViewById(R.id.lblSonuc);
+        txtSayi1.setText("0");
+        txtSayi2.setText("0");
     }
 }
