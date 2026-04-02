@@ -8,6 +8,12 @@
 
     <style name="Theme.Bm443Android" parent="Base.Theme.Bm443Android" />
 
+
+    <style name="duyuru">
+        <item name="android:textSize" >@dimen/baslik</item>
+        <item name="android:textColor" >@color/baslik</item>
+    </style>
+
     <style name="submitButton" parent="@style/Widget.MaterialComponents.Button">
         <item name="backgroundTint"> @color/material_dynamic_neutral0</item>
         <item name="iconTint">@android:color/white</item>

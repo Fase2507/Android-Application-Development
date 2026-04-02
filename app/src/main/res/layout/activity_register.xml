@@ -20,6 +20,7 @@
         <!-- Title / Label -->
         <TextView
             android:id="@+id/kayitFormu"
+            style="@style/duyuru"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/kay_t_formu"
@@ -31,12 +32,25 @@
         <!-- Number Input -->
         <EditText
             android:id="@+id/kayitText"
+            style="@style/duyuru"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/telefon_numaran_z"
             android:inputType="number"
             android:layout_marginBottom="16dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/b_l_m_n_z_se_in"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
+            <AutoCompleteTextView
+                android:id="@+id/txtBolum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
         <!-- Action Button (Material Design) -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/kayitButon"

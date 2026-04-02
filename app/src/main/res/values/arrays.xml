@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bolumler">
+        <item>Bilgisayar muhendisligi</item>
+        <item>Makina muhendisligi</item>
+        <item>Elektrik muhendisligi</item>
+        <item>Endüstri muhendisligi</item>
+    </string-array>
+
+</resources>
