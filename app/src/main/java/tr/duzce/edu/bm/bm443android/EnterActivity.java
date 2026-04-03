@@ -34,9 +34,9 @@ public class EnterActivity extends AppCompatActivity {
         editSifre = findViewById(R.id.editSifre);
         btn = findViewById(R.id.btnGiris);
         shrd = getSharedPreferences("GirisBilgileri", Context.MODE_PRIVATE);
-//        if (shrd.contains("username")) {
-//            yonlendirme();
-//        }
+        if (shrd.contains("username")) {
+            yonlendirme();
+        }
     }
 
     private void registerEventHandler(){

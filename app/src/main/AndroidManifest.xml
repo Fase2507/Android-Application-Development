@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Bm443Android">
         <activity
+            android:name=".FabActivity"
+            android:exported="false" />
+        <activity
             android:name=".ToggleBtnActivity"
             android:exported="false" />
         <activity
@@ -41,7 +44,7 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
     </application>
 
 </manifest>
