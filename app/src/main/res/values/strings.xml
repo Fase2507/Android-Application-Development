@@ -16,4 +16,11 @@
     <string name="kay_t_formu">Kayıt Formu</string>
     <string name="click_count_msg">Tıklanma Sayısı: %1$d</string>
     <string name="b_l_m_n_z_se_in">Bölümünüzü Seçin</string>
+    <string name="mail">Mail adresini giriniz</string>
+    <string name="validasyon">validasyon\n</string>
+    <string name="ad">ad</string>
+    <string name="soyad">soyad\n\t\t\t\t</string>
+    <string name="ho_geldin">"Hoşgeldin "</string>
+    <string name="durdur">Durdur</string>
+    <string name="ba_lat">Başlat</string>
 </resources>

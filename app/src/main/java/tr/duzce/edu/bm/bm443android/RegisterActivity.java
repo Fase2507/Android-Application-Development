@@ -27,6 +27,7 @@ public class RegisterActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_register);
         initComponents();
+        bindData();
         registerEventHandlers();
 
     }
@@ -46,6 +47,10 @@ public class RegisterActivity extends AppCompatActivity {
         txt = findViewById(R.id.kayitFormu);
         input = findViewById(R.id.kayitText);
         btnKaydet = findViewById(R.id.kayitButon);
+
+    }
+
+    private void bindData(){
         String[] bolumler = getResources().getStringArray(R.array.bolumler);
         ArrayAdapter<String> adapter = new ArrayAdapter<>(
                 this,

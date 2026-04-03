@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RegisterActivity">
+    tools:context=".ValidationActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,43 +18,31 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <!-- Title / Label -->
-        <TextView
-            android:id="@+id/kayitFormu"
-            style="@style/duyuru"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/kay_t_formu"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="32dp" />
-
-        <!-- Number Input -->
         <EditText
-            android:id="@+id/kayitText"
+            android:id="@+id/txtAd"
             style="@style/duyuru"
-            android:layout_width="match_parent"
+            android:layout_width="340dp"
             android:layout_height="wrap_content"
-            android:hint="@string/telefon_numaran_z"
-            android:inputType="number"
-            android:layout_marginBottom="16dp" />
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:text="@string/ad"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
+        <EditText
+            android:id="@+id/txtSoy"
+            style="@style/duyuru"
+            android:layout_width="340dp"
             android:layout_height="wrap_content"
-            android:hint="@string/b_l_m_n_z_se_in"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"
+            android:text="@string/soyad"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-            <AutoCompleteTextView
-                android:id="@+id/txtBolum"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text" />
-
-        </com.google.android.material.textfield.TextInputLayout>
         <!-- Action Button (Material Design) -->
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/kayitButon"
+            android:id="@+id/btnKaydet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/kay_t_ol"

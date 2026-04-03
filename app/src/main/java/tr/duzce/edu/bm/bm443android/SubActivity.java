@@ -16,6 +16,7 @@ public class SubActivity extends AppCompatActivity {
     private Button btnCikar;
     private TextView lblSonuc;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
